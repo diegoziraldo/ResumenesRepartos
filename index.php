@@ -17,7 +17,7 @@
 
 
 
-            <form action="procesar.php" method="post" name="viajesNico">
+            <form action="AgregarViajes.php" method="post" name="viajesNico">
                 <label for="clientes">Clientes</label>
                 <select id="clientes">
                     <?php
@@ -29,7 +29,7 @@
                 </select>
                 <h3>Ingrese los viajes</h3>
                 <label for="clientes">Nombre del Cliente</label>
-                <input id="clientes" type="text" id="sector" name="sector" placeholder="Nombre de cliente"><br>
+                <input id="clientes" type="date" id="sector" name="sector" placeholder="Nombre de cliente"><br>
                 <label for="viajes">Cantidad de Viajes</label>
                 <input id="viajes" type="number" id="cantidad" name="cantidad" placeholder="Cantidad de viajes"><br>
                 <label for="precio">Precio por viaje</label>
@@ -38,10 +38,10 @@
             </form>
 
 
-            <form method="post" id="nuevo-cliente" class="mt-3">
-                <h3>Nuevo Cliente</h3>
+            <form action="agregarCliente.php" method="post" id="nuevo-cliente" class="mt-3">
+                <h3>Agregar Cliente</h3>
                 <input type="text" id="nombreCliente" name="nombreCliente">
-                <input type="submit" name="client">
+                <input type="submit" name="client" value="Agregar">
             </form>
 
         </div>
