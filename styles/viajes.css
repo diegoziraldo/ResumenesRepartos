@@ -1,0 +1,20 @@
+*{
+
+    margin: 0;
+    padding: 0;
+}
+
+#ingreso-datos{
+    display: inline-block;
+    width: 45%;
+    margin: 2rem;
+    border: 1px solid black;
+
+}
+
+#caja-viajes{
+    float: right;
+    width: 40%;
+    margin: 2rem;
+
+}
