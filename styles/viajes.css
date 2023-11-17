@@ -6,15 +6,25 @@
 
 #ingreso-datos{
     display: inline-block;
-    width: 45%;
+    width: 35%;
     margin: 2rem;
+    font-weight: bold;
 
 
 }
 
 #caja-viajes{
     float: right;
-    width: 40%;
-    margin: 2rem;
+    width: 60%;
 
+
+}
+
+#ingreso-viajes{
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.form-viajes>input{
+    margin-top: 1rem;
 }

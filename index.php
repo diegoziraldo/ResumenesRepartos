@@ -17,19 +17,28 @@
 
 
 
-            <form action="AgregarViajes.php" method="post" name="viajesNico">
+            <form action="agregarViajes.php" method="post" name="viajesNico" class="form-viajes ">
                 <label for="clientes">Clientes</label>
-                <select id="clientes">
+                <select id="clientes" name="cliente">
                     <?php
                     include('arrays.php');
-                    foreach ($miArray as $array) {
-                        echo "<option value='opcion'" . $array . "'>" . $array . "</option>";
+                    foreach ($clientes as $cliente) {
+                        echo "<option value='$cliente'>" . $cliente . "</option>";
                     }
                     ?>
                 </select>
-                <h3>Ingrese los viajes</h3>
-                <label for="clientes">Nombre del Cliente</label>
-                <input id="clientes" type="date" id="sector" name="sector" placeholder="Nombre de cliente"><br>
+                <label for="zonas">Zona</label>
+                <select id="zonas" name="zona">
+                    <?php
+                    include('arrays.php');
+                    foreach ($zonas as $zona) {
+                        echo "<option value='$zona'>" . $zona . "</option>";
+                    }
+                    ?>
+                </select>
+                <div id="ingreso-viajes">Ingrese los viajes</div>
+                <label for="fecha">Fecha</label>
+                <input id="fecha" type="date" id="fecha" name="fecha"><br>
                 <label for="viajes">Cantidad de Viajes</label>
                 <input id="viajes" type="number" id="cantidad" name="cantidad" placeholder="Cantidad de viajes"><br>
                 <label for="precio">Precio por viaje</label>
@@ -37,18 +46,17 @@
                 <input type="submit" value="Guardar">
             </form>
 
-
             <form action="agregarCliente.php" method="post" id="nuevo-cliente" class="mt-3">
                 <h3>Agregar Cliente</h3>
-                <input type="text" id="nombreCliente" name="nombreCliente">
-                <input type="submit" name="client" value="Agregar">
+                <input type="text" id="nombreCliente" name="cliente" placeholder="Nombre de cliente">
+                <input type="submit" value="Agregar">
             </form>
 
         </div>
 
 
 
-        <div id="caja-viajes">
+        <div id="caja-viajes" class="mt-4">
 
             <?php
 
