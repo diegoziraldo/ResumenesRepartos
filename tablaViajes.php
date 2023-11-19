@@ -5,7 +5,9 @@
     $fechaAnterior = null;
 
 ?>
-<a href="./seccion/reportes.php">Reporte</a>
+<a href="./seccion/reportes.php?parametro1=<?php echo $fechaInicio; ?>&parametro2=<?php echo $fechaFin; ?>">Reporte</a>
+
+
 <table class='table border'>
     <thead>
         <tr class="text-center">
