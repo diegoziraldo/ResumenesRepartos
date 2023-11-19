@@ -15,6 +15,14 @@
         <div id="ingreso-datos">
 
             <h1>VIAJES NICO</h1>
+            <form action="" method="post">
+                <label for="fechaInicio">Desde</label>
+                <input id="fechaInicio" type="date" name="fechaInicio" value="<?php echo date('Y-m-d', strtotime('last Monday')); ?>">
+                <label for="fechafechaFinal">Hasta</label>
+                <input id="fechafechaFinal" type="date" name="fechaFinal" value="<?php echo date('Y-m-d'); ?>">
+                <input class="mb-3" type="submit" value="Consultar">
+            </form>
+
 
 
 
@@ -39,7 +47,7 @@
                 </select>
                 <div id="ingreso-viajes">Ingrese los viajes</div>
                 <label for="fecha">Fecha</label>
-                <input id="fecha" type="date" id="fecha" name="fecha"><br>
+                <input id="fecha" type="date" id="fecha" name="fecha" value="<?php echo date('Y-m-d'); ?>"><br>
                 <label for="viajes">Cantidad de Viajes</label>
                 <input id="viajes" type="number" id="cantidad" name="cantidad" placeholder="Cantidad de viajes"><br>
                 <label for="precio">Precio por viaje</label>
@@ -52,12 +60,6 @@
                 <input type="text" id="nombreCliente" name="cliente" placeholder="Nombre de cliente">
                 <input type="submit" value="Agregar">
             </form>
-
-            <form action="crearTablasFecha.php" method="post">
-                <input type="text" name="nombreTabla" placeholder="Nombre de la tabla">
-                <input type="submit" value="Crear tabla">
-            </form>
-
         </div>
 
 

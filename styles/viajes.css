@@ -6,7 +6,7 @@
 
 #ingreso-datos{
     display: inline-block;
-    width: 35%;
+    width: 40%;
     margin: 2rem;
     font-weight: bold;
 
@@ -15,7 +15,7 @@
 
 #caja-viajes{
     float: right;
-    width: 60%;
+    width: 50%;
     text-align: end;
 
 }

@@ -8,6 +8,9 @@
     $precio = intval($_POST['precio']);
     $cliente = $_POST['cliente'];
         
+    
+
+
     //Aca estamos guardando en la tabla usuarios lo que tenemos guardado en las variables, que obtuvimos en el formulario
     $consulta = "INSERT INTO viajes (fecha, zona, cantidad, precio, cliente) VALUES('$fecha', '$zona', '$cantidad', '$precio', '$cliente')";
     $resultado = mysqli_query($connect,$consulta);
