@@ -63,8 +63,8 @@
                         <td>{$fila['precio']}</td>
                         <td style='font-weight:bold;'>$totalViajes</td>
                         <td>
-                            <button type='button' class='btn btn-primary'><i class='bi bi-pencil'></i></button>
-                            <button type='button' class='btn btn-danger'><i class='bi bi-trash-fill'></i></button>
+                            <button type='submit' formaction='editar.php' class='btn btn-primary'><i class='bi bi-pencil'></i></button>
+                            <button type='button' formaction='eliminar.php' class='btn btn-danger'><i class='bi bi-trash-fill'></i></button>
                         </td>
                     </tr>";
 
