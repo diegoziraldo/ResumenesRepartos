@@ -47,7 +47,7 @@
                 </select>
                 <div id="ingreso-viajes">Ingrese los viajes</div>
                 <label for="fecha">Fecha</label>
-                <input id="fecha" type="date" id="fecha" name="fecha" value="<?php echo date('Y-m-d'); ?>"><br>
+                <input id="fecha" type="date" name="fecha" value="<?php echo date('Y-m-d'); ?>"><br>
                 <label for="viajes">Cantidad de Viajes</label>
                 <input id="viajes" type="number" id="cantidad" name="cantidad" placeholder="Cantidad de viajes"><br>
                 <label for="precio">Precio por viaje</label>
