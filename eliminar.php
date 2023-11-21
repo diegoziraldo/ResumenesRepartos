@@ -20,7 +20,7 @@ function eliminarElemento($id)
     }
 
     // Cerrar la conexión
-    $conn->close();
+    $connect->close();
 }
 
 // Uso de la función

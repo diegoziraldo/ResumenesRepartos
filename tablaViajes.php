@@ -64,7 +64,9 @@
                         <td style='font-weight:bold;'>$totalViajes</td>
                         <td>
                             <form style='display: inline-block; action='editar.php' method='get'>
-                                <a href='editar.php?accion=editar&id={$fila['Id']}' class='btn btn-primary'><i class='bi bi-pencil'></i></a>
+                            <a href='editar.php?accion=editar&id={$fila['Id']}&cliente={$fila['cliente']}&zona={$fila['zona']}&cantidad={$fila['cantidad']}&precio={$fila['precio']}'
+                                                                
+                            class='btn btn-primary'><i class='bi bi-pencil'></i></a>
                             </form>
                             <form style='display: inline-block; action='eliminar.php' method='get'>
                                 <a href='eliminar.php?accion=eliminar&id={$fila['Id']}' class='btn btn-danger'><i class='bi bi-trash'></i></a>

@@ -17,15 +17,11 @@
             <h1>VIAJES NICO</h1>
             <form action="" method="post">
                 <label for="fechaInicio">Desde</label>
-                <input id="fechaInicio" type="date" name="fechaInicio" value="<?php echo date('Y-m-d', strtotime('last Monday')); ?>">
+                <input id="fechaInicio" type="date" name="fechaInicio" value="<?php date_default_timezone_set('America/Argentina/Buenos_Aires'); echo date('Y-m-d', strtotime('last Monday')); ?>">
                 <label for="fechafechaFinal">Hasta</label>
-                <input id="fechafechaFinal" type="date" name="fechaFinal" value="<?php echo date('Y-m-d'); ?>">
+                <input id="fechafechaFinal" type="date" name="fechaFinal" value="<?php date_default_timezone_set('America/Argentina/Buenos_Aires');  echo date('Y-m-d'); ?>">
                 <input class="mb-3" type="submit" value="Consultar">
             </form>
-
-
-
-
             <form action="agregarViajes.php" method="post" name="viajesNico" class="form-viajes ">
                 <label for="clientes">Clientes</label>
                 <select id="clientes" name="cliente">
