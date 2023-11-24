@@ -1,23 +1,14 @@
 
 
 <?php
-
-
-
     include('connect.php');
-    
     date_default_timezone_set('America/Argentina/Buenos_Aires');
-    $fechaInicioIndex = date('Y-m-d', strtotime('last Monday'));
+    $fechaInicio = date('Y-m-d', strtotime('last Monday'));
     date_default_timezone_set('America/Argentina/Buenos_Aires');
-    $fechaFinalIndex = date('Y-m-d');
-    
-    $fechaInicio = isset($_POST['fechaInicio']) ? $_POST['fechaInicio'] : $fechaInicioIndex;
-    $fechaFin = isset($_POST['fechaFinal']) ? $_POST['fechaFinal'] : $fechaFinalIndex ;
+    $fechaFinal = date('Y-m-d');
 
-
-
-    if ($fechaInicio && $fechaFin) {
-        $consulta = "SELECT * FROM viajes WHERE fecha BETWEEN '$fechaInicio' AND '$fechaFin' ORDER BY fecha, cliente, id";
+    if ($fechaInicio && $fechaFinal) {
+        $consulta = "SELECT * FROM viajes WHERE fecha BETWEEN '$fechaInicio' AND '$fechaFinal' ORDER BY fecha, cliente, id";
     } else {
         $consulta = "SELECT * FROM viajes ORDER BY fecha, cliente, id";
     }

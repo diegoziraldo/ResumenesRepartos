@@ -1,2 +1,11 @@
-let optionViajes = document.querySelector('#option-viajes')
-const array = ['hola', 'chau']
+
+document.addEventListener("DOMContentLoaded", function() {
+    ejecucionAutomatica("consulta");
+});
+
+function ejecucionAutomatica(id) {
+    let idForm = document.getElementById(id);
+    if (idForm) {
+        idForm.submit();
+    }
+}

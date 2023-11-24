@@ -30,7 +30,6 @@
                 while ($fila = mysqli_fetch_assoc($resultado)) {
                     $fechaActual = $fila['fecha'];
                     if ($fechaActual != $fechaAnterior) {
-                        // Imprimir la fila de total solo si no es el primer registro
                         if (!$primerRegistro) {
                             echo 
                             "<tr>
