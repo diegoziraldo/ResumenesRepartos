@@ -4,12 +4,18 @@
     padding: 0;
 }
 
+h1{
+    text-align: center;
+    align-items: center;
+}
+
+
 #ingreso-datos{
     display: inline-block;
     width: 40%;
     margin: 2rem;
     font-weight: bold;
-
+    
 
 }
 
