@@ -11,24 +11,32 @@
 </head>
 
 <body>
+
     <?php
-        include('inicioViajes.php');
+    include_once('inicioViajes.php');
+    ?>
+
+    <?php
+    include_once('navigate.php');
     ?>
 
 
     <div class="container">
         <div id="ingreso-datos">
-            <h1>VIAJES NICO</h1>
+            <h1>GESTION LOGISTICA
+
+            </h1>
             <?php
             $fechaInicio
-            ?> 
+            ?>
+
             <form action="" id="consulta" class="" method="post">
                 <label for="fechaInicio">Desde</label>
                 <input id="fechaInicio" type="date" name="fechaInicio" value="<?php date_default_timezone_set('America/Argentina/Buenos_Aires');
-        echo date('Y-m-d', strtotime('last Monday'));  ?>">
+                                                                                echo date('Y-m-d', strtotime('last Sunday'));  ?>">
                 <label for="fechafechaFinal">Hasta</label>
                 <input id="fechafechaFinal" type="date" name="fechaFinal" value="<?php date_default_timezone_set('America/Argentina/Buenos_Aires');
-        echo date('Y-m-d'); ?>">
+                                                                                    echo date('Y-m-d'); ?>">
                 <input class="mb-3" type="submit" value="Consultar">
             </form>
 
@@ -67,17 +75,20 @@
                 <input type="text" id="nombreCliente" name="cliente" placeholder="Nombre de cliente">
                 <input type="submit" value="Agregar">
             </form>
+
         </div>
+
+
         <div id="caja-viajes" class="mt-4">
             <?php
-                include('tablaViajes.php');
+            include('tablaViajes.php');
             ?>
         </div>
     </div>
 
-    
-    
-   <!--  <script src="script.js"></script> -->
+
+
+    <!--  <script src="script.js"></script> -->
 
 
 

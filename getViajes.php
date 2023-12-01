@@ -7,7 +7,7 @@
     include('connect.php');
     
     date_default_timezone_set('America/Argentina/Buenos_Aires');
-    $fechaInicioIndex = date('Y-m-d', strtotime('last Monday'));
+    $fechaInicioIndex = date('Y-m-d', strtotime('last Sunday'));
     date_default_timezone_set('America/Argentina/Buenos_Aires');
     $fechaFinalIndex = date('Y-m-d');
     
