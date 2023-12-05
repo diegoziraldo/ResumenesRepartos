@@ -12,13 +12,36 @@
 
 
 <?php
-
     include_once('./navigate.php');
 
-    echo ('<h1>Repartidor</h1>')
-
-
 ?>
+    <div class="container">
+
+        <h3>Repartidores</h3>
+
+        <?php
+                    include('arrays.php');
+                    foreach ($repartidores as $repartidor) {
+                        echo "<option value='$repartidor'>" . $repartidor . "</option>";
+                    }
+
+
+
+
+
+                    
+                    ?>
+
+
+        <button class='btn btn-success' >
+            <a class="nav-link" href="./?page=altaCliente">Agregar Repartidor</a>
+        </button>
+
+    </div>
+
+
+
+
 
     
 </body>
