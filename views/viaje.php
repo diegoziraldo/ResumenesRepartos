@@ -43,7 +43,8 @@
                     <?php
                     include('arrays.php');
                     foreach ($clientes as $cliente) {
-                        echo "<option value='$cliente'>" . $cliente . "</option>";
+                        echo "<option value='" . $cliente['razonSocial'] . "'>" . $cliente['razonSocial'] . "</option>";
+
                     }
                     ?>
                 </select>
@@ -65,13 +66,6 @@
                 <input id="precio" type="number" id="precio" name="precio" placeholder="Precio del viaje"><br>
                 <input type="submit" value="Guardar">
             </form>
-
-            <form action="agregarCliente.php" method="post" id="nuevo-cliente" class="mt-3">
-                <h3>Agregar Cliente</h3>
-                <input type="text" id="nombreCliente" name="cliente" placeholder="Nombre de cliente">
-                <input type="submit" value="Agregar">
-            </form>
-
         </div>
 
 

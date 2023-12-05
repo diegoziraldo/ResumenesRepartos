@@ -29,19 +29,35 @@
 
         echo "
         <table class='table border'>
-        <tr >
-            <th>Nombre</th>
-            <th>Apellido</th>
-            <th>Correo Electronico</th>
-            <th>Telefono</th>
-            <th>Direccion</th>
-            <th>Razon Social</th>
+        <tr>
+        <th>Nombre</th>
+        <th>Apellido</th>
+        <th>Correo Electronico</th>
+        <th>Telefono</th>
+        <th>Direccion</th>
+        <th>Razon Social</th>
+        <th>Id</th>
+            <th>Acciones</th>
         </tr>";
 
         foreach ($clientes as $cliente) {
             echo "<tr>";
             // Suponiendo que cada $repartidor es un array asociativo con un campo "id" y un campo "nombre"
-             echo "<td><option value='$cliente'>" . $cliente. "</option></td>";
+            echo "<td><option value='" . $cliente['nombre'] . "'>" . $cliente['nombre'] . "</option></td>";
+            echo "<td><option value='" . $cliente['apellido'] . "'>" . $cliente['apellido'] . "</option></td>";
+            echo "<td><option value='" . $cliente['email'] . "'>" . $cliente['email'] . "</option></td>";
+            echo "<td><option value='" . $cliente['telefono'] . "'>" . $cliente['telefono'] . "</option></td>";
+            echo "<td><option value='" . $cliente['direccion'] . "'>" . $cliente['direccion'] . "</option></td>";
+            echo "<td><option value='" . $cliente['razonSocial'] . "'>" . $cliente['razonSocial'] . "</option></td>";
+            echo "<td><option value='" . $cliente['Id'] . "'>" . $cliente['Id'] . "</option></td>";
+            echo "<td>
+                    <form style='display: inline-block; action='editar.php' method='get'>
+                        <a href='editar.php?accion=editar&id={$fila['Id']}&cliente={$fila['cliente']}&zona={$fila['zona']}&cantidad={$fila['cantidad']}&precio={$fila['precio']}' class='btn btn-primary'><i class='bi bi-pencil'></i></a>
+                    </form>
+                    <form style='display: inline-block; action='eliminar.php' method='get'>
+                        <a href='../eliminar.php?accion=eliminar&id={$cliente['Id']}' class='btn btn-danger'><i class='bi bi-trash'></i></a>
+                    </form>                        
+                </td>";
             echo "</tr>";
         }
 

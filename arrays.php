@@ -10,7 +10,16 @@
     
     while ($fila = mysqli_fetch_assoc($resultado)) {    
         
-        $clientes[] =  $fila['cliente'];
+        $clientes[] = array(
+            'Id' => $fila['Id'],
+            'nombre' => $fila['nombre'],
+            'apellido' => $fila['apellido'],
+            'email' => $fila['email'],
+            'telefono' => $fila['telefono'],
+            'direccion' => $fila['direccion'],
+            'razonSocial' => $fila['razonSocial']
+        );
+        
 
         $contador++;
     }

@@ -26,7 +26,8 @@
         "repartidor" => "RepartidorControllers",
         "reporte" => "ReporteControllers",
         "viaje" => "ViajesControllers",
-        "altaCliente" => "AltaClientesControllers"
+        "altaCliente" => "AltaClientesControllers",
+        "eliminarCliente" => "EliminarClienteControllers"
     ];
 
     $controllerName = $routes[$page] ?? null;
