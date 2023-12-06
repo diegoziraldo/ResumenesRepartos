@@ -27,7 +27,7 @@
         "reporte" => "ReporteControllers",
         "viaje" => "ViajesControllers",
         "altaCliente" => "AltaClientesControllers",
-        "eliminarCliente" => "EliminarClienteControllers"
+        "eliminar" => "eliminar.php"
     ];
 
     $controllerName = $routes[$page] ?? null;

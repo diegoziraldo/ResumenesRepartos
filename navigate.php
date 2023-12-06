@@ -1,12 +1,13 @@
-  
-<style>
-    #tituloIndex{
-        color:rgb(100, 15, 255);
-        font-weight: bold;
-    }
-</style>
-
-
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/navigateStyles.css">
+    <title>Document</title>
+  </head>
+  <body>
+    
 <div class="container">
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
@@ -37,3 +38,5 @@
         </div>
     </nav>
 </div>
+</body>
+  </html>

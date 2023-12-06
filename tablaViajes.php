@@ -67,10 +67,10 @@
                                                                 
                             class='btn btn-primary'><i class='bi bi-pencil'></i></a>
                             </form>
-                            <form style='display: inline-block; action='eliminar.php' method='get'>
-                                <a href='eliminar.php?accion=eliminar&id={$fila['Id']}' class='btn btn-danger'><i class='bi bi-trash'></i></a>
+                            <form style='display: inline-block; action='eliminarViajes.php' method='get'>
+                                <a href='eliminarViajes.php?accion=eliminar&id={$fila['Id']}' class='btn btn-danger'><i class='bi bi-trash'></i></a>
                             </form>                        
-                            </td>
+                        </td>
                     </tr>";
 
                     $contador++;
