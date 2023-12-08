@@ -23,33 +23,33 @@
 
 
         <?php
+            // Suponiendo que $repartidores es un array con los datos de los repartidores
             include('arrays.php');
 
-        // Suponiendo que $repartidores es un array con los datos de los repartidores
+        ?>
 
-        echo "
         <table class='table border'>
         <tr>
-        <th>Nombre</th>
-        <th>Apellido</th>
-        <th>Correo Electronico</th>
-        <th>Telefono</th>
-        <th>Direccion</th>
-        <th>Razon Social</th>
-        <th>Id</th>
+            <th>Nombre</th>
+            <th>Apellido</th>
+            <th>Correo Electronico</th>
+            <th>Telefono</th>
+            <th>Direccion</th>
+            <th>Localidad</th>
+            <th>Razon Social</th>
             <th>Acciones</th>
-        </tr>";
-
+        </tr>
+            
+        <?php
         foreach ($clientes as $cliente) {
-            echo "<tr>";
             // Suponiendo que cada $repartidor es un array asociativo con un campo "id" y un campo "nombre"
             echo "<td><option value='" . $cliente['nombre'] . "'>" . $cliente['nombre'] . "</option></td>";
             echo "<td><option value='" . $cliente['apellido'] . "'>" . $cliente['apellido'] . "</option></td>";
             echo "<td><option value='" . $cliente['email'] . "'>" . $cliente['email'] . "</option></td>";
             echo "<td><option value='" . $cliente['telefono'] . "'>" . $cliente['telefono'] . "</option></td>";
             echo "<td><option value='" . $cliente['direccion'] . "'>" . $cliente['direccion'] . "</option></td>";
+            echo "<td><option value='" . $cliente['localidad'] . "'>" . $cliente['localidad'] . "</option></td>";
             echo "<td><option value='" . $cliente['razonSocial'] . "'>" . $cliente['razonSocial'] . "</option></td>";
-            echo "<td><option value='" . $cliente['Id'] . "'>" . $cliente['Id'] . "</option></td>";
             echo "<td>
             <form style='display: inline-block;' action='editarCliente.php' method='get'>
                 <a href='editar.php?accion=editar&id={$cliente['Id']}&cliente={$cliente['cliente']}&zona={$cliente['zona']}&cantidad={$cliente['cantidad']}&precio={$cliente['precio']}' class='btn btn-primary'><i class='bi bi-pencil'></i></a>
@@ -64,9 +64,9 @@
             echo "</tr>";
         }
 
-        echo "</table>";
-
         ?>
+        </table>
+
 
         <button class='btn btn-success'>
             <a class="nav-link" href="./?page=altaCliente">Agregar Cliente</a>

@@ -45,8 +45,13 @@
     </div>
 
     <div class="row mb-3">
+        <label for="direccion" class="col-sm-2 col-form-label">Localidad:</label>
+        <input type="text" id="localidad" name="localidad" class="col-sm-10 form-control">
+    </div>
+
+    <div class="row mb-3">
         <label for="direccion" class="col-sm-2 col-form-label">Razon Social:</label>
-        <input type="text" id="direccion" name="razonSocial" class="col-sm-10 form-control">
+        <input type="text" id="razonSocial" name="razonSocial" class="col-sm-10 form-control">
     </div>
 
     <button type="submit" class="btn btn-primary">Guardar Cliente</button>

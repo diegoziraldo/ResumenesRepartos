@@ -7,10 +7,11 @@
     $email = $_POST['email'];
     $telefono = $_POST['telefono'];
     $direccion = $_POST['direccion'];
+    $localidad = $_POST['localidad'];
     $razonSocial = $_POST['razonSocial'];
         
     //Aca estamos guardando en la tabla usuarios lo que tenemos guardado en las variables, que obtuvimos en el formulario
-    $consulta = "INSERT INTO clientes(nombre, apellido, email, telefono, direccion, razonSocial) VALUES ('$nombre', '$apellido', '$email', '$telefono', '$direccion', '$razonSocial')";
+    $consulta = "INSERT INTO clientes(nombre, apellido, email, telefono, direccion,localidad, razonSocial) VALUES ('$nombre', '$apellido', '$email', '$telefono', '$direccion', '$localidad', '$razonSocial')";
     $resultado = mysqli_query($connect,$consulta);
 ?>
 

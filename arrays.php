@@ -17,6 +17,7 @@
             'email' => $fila['email'],
             'telefono' => $fila['telefono'],
             'direccion' => $fila['direccion'],
+            'localidad' => $fila['localidad'],
             'razonSocial' => $fila['razonSocial']
         );
         
