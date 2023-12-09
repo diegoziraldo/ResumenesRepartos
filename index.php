@@ -34,7 +34,6 @@
 
     if ($controllerName) {
         includeControllers($controllerName);
-
         $action = 'render';
         if (function_exists($action)) {
             $action();
