@@ -12,40 +12,37 @@
 
 <body>
     <?php
-
     function includeControllers($controllersName)
     {
-        require_once("controllers/{$controllersName}.php");
+        require_once("Controllers/{$controllersName}.php");
     }
 
     $page = $_GET['page'] ?? '/';
-
     $routes = [
         "/" => "HomeControllers",
-        "cliente" => "ClienteControllers",
+        "cliente" => "ClientesControllers",
         "repartidor" => "RepartidorControllers",
-        "reporte" => "ReporteControllers",
+        "reporte" => "ReportesControllers",
         "viaje" => "ViajesControllers",
         "altaCliente" => "AltaClientesControllers",
         "eliminar" => "eliminar.php"
     ];
+    $controllersName = $routes[$page] ?? null;
 
-    $controllerName = $routes[$page] ?? null;
-
-    if ($controllerName) {
-        includeControllers($controllerName);
+    if ($controllersName) {
+        includeControllers($controllersName);
+        $controller = new $controllersName(); // Crear una instancia del controlador
         $action = 'render';
-        if (function_exists($action)) {
-            $action();
+        if (method_exists($controller, $action)) {
+            $controller->$action(); // Llamar al método render del controlador
         } else {
             http_response_code(404);
-            echo "<h1>Pagina no encontrada</h1>";
+            echo "<h1>Página no encontrada</h1>";
         }
     } else {
         http_response_code(404);
-        echo "<h1>Pagina no encontrada</h1>";
+        echo "<h1>Página no encontrada</h1>";
     }
-
     ?>
 
 </body>
