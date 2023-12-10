@@ -19,9 +19,9 @@
 
 
 
-    <script type="text/javascript">
+<!--     <script type="text/javascript">
           function redirect() {
-              window.location = "http://localhost:8080/ResumenesRepartos/?page=cliente";
+            window.location = "http://localhost:8080/ResumenesRepartos/?page=viaje";
           }
           window.onload = redirect;
-    </script>
+    </script> -->

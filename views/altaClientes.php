@@ -16,7 +16,7 @@
 
 ?>
 
-<form action="/agregarCliente.php" method="post" class="container" id="nuevo-cliente">
+<form action="./agregarCliente.php" method="post" class="container" id="nuevo-cliente">
     <h2 class="mb-4">Alta de Cliente</h2>
 
     <div class="row mb-3">
