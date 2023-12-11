@@ -14,7 +14,7 @@
 
 
     <?php
-    include_once('./navigate.php');
+    include_once('navigate.php');
 
     ?>
     <div class="container">

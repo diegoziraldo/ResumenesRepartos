@@ -4,7 +4,7 @@
 class GuardarClientesControllers{
     
     public function render(){
-        include_once('views/altaClientes.php');
+        include_once('agregarCliente.php');
         }
     }
 

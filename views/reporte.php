@@ -13,7 +13,7 @@
 
 <?php
 
-    include_once('./navigate.php');
+    include_once('navigate.php');
 
     echo ('<h1>Reporte</h1>')
 
