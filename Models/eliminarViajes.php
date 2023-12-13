@@ -1,9 +1,10 @@
 <?php
 $id = $_GET['id'];
+
 function eliminarElemento($id)
 {
 
-    include('connect.php');
+    include('./connect.php');
 
     // Verificar la conexión
     if ($connect->connect_error) {

@@ -1,7 +1,7 @@
 <?php
 
 
-    include('getViajes.php');
+    include('./Models/getViajes.php');
     $fechaAnterior = null;
 
 ?>
@@ -63,12 +63,12 @@
                         <td style='font-weight:bold;'>$totalViajes</td>
                         <td>
                             <form style='display: inline-block; action='editar.php' method='get'>
-                            <a href='editar.php?accion=editar&id={$fila['Id']}&cliente={$fila['cliente']}&zona={$fila['zona']}&cantidad={$fila['cantidad']}&precio={$fila['precio']}'
+                            <a href='./Models/editar.php?accion=editar&id={$fila['Id']}&cliente={$fila['cliente']}&zona={$fila['zona']}&cantidad={$fila['cantidad']}&precio={$fila['precio']}'
                                                                 
                             class='btn btn-primary'><i class='bi bi-pencil'></i></a>
                             </form>
-                            <form style='display: inline-block; action='eliminarViajes.php' method='get'>
-                                <a href='eliminarViajes.php?accion=eliminar&id={$fila['Id']}' class='btn btn-danger'><i class='bi bi-trash'></i></a>
+                            <form style='display: inline-block; method='get'>
+                                <a href='./Models/eliminarViajes.php?accion=eliminar&id={$fila['Id']}' class='btn btn-danger'><i class='bi bi-trash'></i></a>
                             </form>                        
                         </td>
                     </tr>";

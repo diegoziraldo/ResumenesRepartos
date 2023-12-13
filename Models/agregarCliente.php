@@ -1,6 +1,6 @@
 <?php
 
-    include ('./connect.php');
+    include ('connect.php');
 
     $nombre = $_POST['nombre'] ?? '';
     $apellido = $_POST['apellido'] ?? '';
@@ -17,11 +17,9 @@
 
 ?>
 
-
-
     <script type="text/javascript">
           function redirect() {
-              window.location = "http://localhost:8080/ResumenesRepartos/?page=viaje";
+              window.location = "http://localhost:8080/ResumenesRepartos/?page=cliente";
           }
           window.onload = redirect;
     </script>

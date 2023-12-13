@@ -1,10 +1,10 @@
 <?php
 
 
-class GuardarClientesControllers{
+class AgregarViajesControllers{
     
     public function render(){
-        include_once('./agregarCliente.php');
+        include_once('./Models/agregarViajes.php');
         }
     }
 
