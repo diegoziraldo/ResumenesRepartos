@@ -19,7 +19,8 @@
 
     $page = $_GET['page'] ?? '/';
     $routes = [
-        "/" => "HomeControllers",
+        "/" => "LoginControllers",
+        "home" => "HomeControllers",
         "cliente" => "ClientesControllers",
         "repartidor" => "RepartidorControllers",
         "reporte" => "ReportesControllers",

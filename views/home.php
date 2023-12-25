@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,32 +15,7 @@
     <?php
     include_once('navigate.php');
     ?>
-  <div class="container mt-4" id="ingresoUsuario">
-    <div class="row justify-content-center">
-      <div class="col-md-6">
-        <div class="card">
-          <div class="card-header">
-            Login de administrador
-          </div>
-          <div class="card-body">
-            <form action="/login" method="post">
-              <div class="mb-3">
-                <label for="admin" class="form-label">Usuario</label>
-                <input type="text" class="form-control" id="email" name="admin" required>
-              </div>
-              <div class="mb-3">
-                <label for="password" class="form-label">Contraseña</label>
-                <input type="password" class="form-control" id="password" name="password" required>
-              </div>
-              <div class="d-flex justify-content-end">
-                <button type="submit" class="btn btn-primary">Iniciar sesión</button>
-              </div>
-            </form>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+
 
     
     </body>
