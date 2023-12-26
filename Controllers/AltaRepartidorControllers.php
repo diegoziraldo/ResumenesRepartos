@@ -1,10 +1,10 @@
 <?php
 
 
-class GuardarClientesControllers{
+class AltaRepartidorControllers{
     
     public function render(){
-        include_once('./Models/agregarCliente.php');
+        include_once('views/altaRepartidores.php');
         }
     }
 

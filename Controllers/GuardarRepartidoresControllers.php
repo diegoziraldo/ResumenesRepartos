@@ -1,7 +1,7 @@
 <?php
 
 
-class GuardarClientesControllers{
+class GuardarRepartidoresControllers{
     
     public function render(){
         include_once('./Models/agregarCliente.php');

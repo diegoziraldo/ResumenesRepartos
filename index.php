@@ -27,8 +27,11 @@
         "viaje" => "ViajesControllers",
         "altaCliente" => "AltaClientesControllers",
         "agregarCliente" => "GuardarClientesControllers",
+        "altaRepartidor" => "AltaRepartidorControllers",
+        "agregarRepartidor" => "GuardarRepartidoresControllers",
         "eliminarViaje" => "EliminarViajesControllers",
-        "agregarViajes" => "AgregarViajesControllers"
+        "agregarViajes" => "AgregarViajesControllers",
+        "inicioSesion" => "InicioSesionControllers"
 
     ];
     $controllersName = $routes[$page] ?? null;

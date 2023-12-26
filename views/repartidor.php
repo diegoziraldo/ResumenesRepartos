@@ -34,7 +34,7 @@
 
 
         <button class='btn btn-success' >
-            <a class="nav-link" href="./?page=altaCliente">Agregar Repartidor</a>
+            <a class="nav-link" href="./?page=altaRepartidor">Agregar Repartidor</a>
         </button>
 
     </div>

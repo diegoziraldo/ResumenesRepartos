@@ -54,8 +54,8 @@
             <form style='display: inline-block;' action='editarCliente.php' method='get'>
                 <a href='editar.php?accion=editar&id={$cliente['Id']}&cliente={$cliente['cliente']}&zona={$cliente['zona']}&cantidad={$cliente['cantidad']}&precio={$cliente['precio']}' class='btn btn-primary'><i class='bi bi-pencil'></i></a>
             </form>
-            <form style='display: inline-block; action='eliminarCliente.php' method='get'>
-                <a href='eliminarCliente.php?accion=eliminar&id={$cliente['Id']}' class='btn btn-danger'><i class='bi bi-trash'></i></a>
+            <form style='display: inline-block; action='./Models/eliminarCliente.php' method='get'>
+                <a href='./Models/eliminarCliente.php?accion=eliminar&id={$cliente['Id']}' class='btn btn-danger'><i class='bi bi-trash'></i></a>
             </form> 
             <form style='display: inline-block; action='HistorialCliente.php' method='get'>
                 <a href='eliminarClientes.php?accion=eliminar&id={$cliente['Id']}' class='btn btn-success'>Historial</a>

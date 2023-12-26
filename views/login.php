@@ -12,7 +12,7 @@
 
 <?php
 
-    include_once('../Models/connect.php');
+include_once('../Models/connect.php');
 
 ?>
 
@@ -24,23 +24,31 @@
                 <div class="card">
                     <div class="card-header">
                         Login de administrador
+
                     </div>
                     <div class="card-body">
-                        <form action="/login" method="post">
+                        <form method="post" action="?page=inicioSesion" >
                             <div class="mb-3">
                                 <label for="nombre" class="form-label">Nombre</label>
-                                <input type="text" class="form-control" id="email" name="nombre" required>
+                                <input type="text" class="form-control" id="nombre" name="nombre">
+                            </div>
+                            <div class="mb-3">
+                                <label for="apellido" class="form-label">Apellido</label>
+                                <input type="text" class="form-control" id="apellido" name="apellido">
                             </div>
                             <div class="mb-3">
                                 <label for="cargo" class="form-label">Cargo</label>
-                                <select type="text" class="form-control" id="text" name="cargo" required></select>
+                                <select type="select" class="form-control" id="cargo" name="cargo">
+                                    <option value="Repartidor">Repartidor</option>
+                                    <option value="Vendedor">Vendedor</option>
+                                </select>
                             </div>
                             <div class="mb-3">
-                                <label for="contraseña" class="form-label">Contraseña</label>
-                                <input type="password" class="form-control" id="password" name="contraseña" required>
+                                <label for="contrasena" class="form-label">Contraseña</label>
+                                <input type="text" class="form-control" id="contrasena" name="contrasena">
                             </div>
                             <div class="d-flex justify-content-end">
-                                <button type="submit" class="btn btn-primary">Iniciar sesión</button>
+                                <button type="submit" class="btn btn-primary" name="iniciarSesion">Iniciar sesión</button>
                             </div>
                         </form>
                     </div>

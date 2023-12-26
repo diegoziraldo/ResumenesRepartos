@@ -16,8 +16,8 @@
 
 ?>
 
-<form action="?page=agregarCliente" method="post" class="container" id="nuevo-cliente">
-    <h2 class="mb-4">Alta de Cliente</h2>
+<form action="?page=agregarRepartidor" method="post" class="container" id="nuevo-cliente">
+    <h2 class="mb-4">Alta de Repartidor</h2>
 
     <div class="row mb-3">
         <label for="nombre" class="col-sm-2 col-form-label">Nombre:</label>
@@ -27,6 +27,11 @@
     <div class="row mb-3">
         <label for="apellido" class="col-sm-2 col-form-label">Apellido:</label>
         <input type="text" id="apellido" name="apellido" class="col-sm-10 form-control">
+    </div>
+
+    <div class="row mb-3">
+        <label for="dni" class="col-sm-2 col-form-label">DNI:</label>
+        <input type="text" id="dni" name="dni" class="col-sm-10 form-control">
     </div>
 
     <div class="row mb-3">
@@ -49,12 +54,7 @@
         <input type="text" id="localidad" name="localidad" class="col-sm-10 form-control">
     </div>
 
-    <div class="row mb-3">
-        <label for="direccion" class="col-sm-2 col-form-label">Razon Social:</label>
-        <input type="text" id="razonSocial" name="razonSocial" class="col-sm-10 form-control">
-    </div>
-
-    <button type="submit" class="btn btn-primary" >Guardar Cliente</button>
+    <button type="submit" class="btn btn-primary">Guardar Repartidor</button>
 </form>
 
 
